@@ -1,0 +1,65 @@
+// 3
+
+html {
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;/* использует значение box-sizing родителя, необходимо для возможности назначить любому тегу или классу box-sizing: content-box; (для некоторых плагинов или сборщиков) */
+}
+
+ul[class],
+ol[class] {
+  padding: 0;/* относиться к ul, ol у которых назначен класс */
+}
+
+/*
+css селектор
+[href] { /* относиться к тегам с атрибутом [href] *//*
+  display: none;
+}
+[href="#"] { /* относиться к тегам у которых атрибут [href="#"] *//*
+  display: none;
+}*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;/* при меньшей ширине экрана картинка будет на 100%, при большей - останется при своей ширине */
+  display: block;/* картинка по умолчанию строчный тег, также убирает отступ который есть у строчных элементов */
+}
+  
+input,
+button,
+textarea,
+select {
+  font: inherit; /* использует шрифты родителя, в некоторых браузерах свои шрифты для этих тегов */
+}
+
+a {
+  text-decoration: none;
+}
