@@ -1,29 +1,17 @@
-// 3
-
 html {
   box-sizing: border-box;
-  /* scroll-behavior: smooth; */
 }
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit;/* использует значение box-sizing родителя, необходимо для возможности назначить любому тегу или классу box-sizing: content-box; (для некоторых плагинов или сборщиков) */
+  box-sizing: inherit;
 }
 
 ul[class],
 ol[class] {
-  padding: 0;/* относиться к ul, ol у которых назначен класс */
+  padding: 0;
 }
-
-/*
-css селектор
-[href] { /* относиться к тегам с атрибутом [href] *//*
-  display: none;
-}
-[href="#"] { /* относиться к тегам у которых атрибут [href="#"] *//*
-  display: none;
-}*/
 
 body,
 h1,
@@ -33,8 +21,8 @@ h4,
 h5,
 h6,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -49,15 +37,15 @@ ul[class] {
 }
 
 img {
-  max-width: 100%;/* при меньшей ширине экрана картинка будет на 100%, при большей - останется при своей ширине */
-  display: block;/* картинка по умолчанию строчный тег, также убирает отступ который есть у строчных элементов */
+  max-width: 100%;
+  display: block;
 }
-  
+
 input,
 button,
 textarea,
 select {
-  font: inherit; /* использует шрифты родителя, в некоторых браузерах свои шрифты для этих тегов */
+  font: inherit;
 }
 
 a {

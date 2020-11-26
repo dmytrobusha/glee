@@ -1,13 +1,122 @@
-// 1
 @import 'vars';
 @import 'fonts';
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 46px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  margin: 0 2% 0 10%;
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item+.menu__list-item {
+    padding-left: 36px;
+  }
+
+  &__list-link {
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 1;
+    color: #436372;
+  }
+}
+
+.user-nav {
+  display: flex;
+  gap: 20px;
+
+  &__group1,
+  &__group2,
+  &__group3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+  }
+
+  &__group1,
+  &__group3 {
+    width: 51px;
+    border-radius: 50%;
+  }
+
+  &__group1 {
+    background-color: #edf1f4;
+  }
+
+  &__group2 {
+    width: 178px;
+    background-color: #fcd7b6;
+    border-radius: 26px;
+  }
+
+  &__group3 {
+    background-color: #a3bbc8;
+  }
+
+  &__link--icon1 {
+    content: url('../images/icons/search.svg');
+    padding: 17px;
+  }
+
+  &__link--icon2::before {
+    content: url('../images/icons/heart.svg');
+  }
+
+  &__link--icon3::before {
+    content: url('../images/icons/cart.svg');
+  }
+
+  &__link--icon4 {
+    content: url('../images/icons/btn.svg');
+    padding: 15px;
+  }
+
+  &__link--icon2,
+  &__link--icon3 {
+    padding: 16px 18px 0;
+  }
+
+  &__symbol {
+    margin: 0 10px;
+    height: 32px;
+    width: 1px;
+    background-color: #fde7d3;
+  }
+
+  &__link {
+    position: relative;
+  }
+
+  &__num {
+    position: absolute;
+    top: 13px;
+    right: 8px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    @extend %dmsans-400;
+    font-size: 10px;
+    line-height: 16px;
+    color: #243f4d;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
 
 
 
 
-
-// 2
 @import 'media';
