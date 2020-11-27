@@ -1,7 +1,20 @@
+html,
 body {
-  font-size: 16px;
-  line-height: 30px;
+  height: 100%;
+}
+
+body {
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+a {
+  color: inherit;
 }
 
 .container {
