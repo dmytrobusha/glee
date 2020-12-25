@@ -57,6 +57,8 @@ function scripts() {
   // 22 gulp - необходимо указать путь для преобразования js файлов
   return src([
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/mixitup/dist/mixitup.min.js',
     'app/js/main.js'
   ])
   // 23 gulp - преобразовываем файлы js в один main.min.js

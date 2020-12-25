@@ -27,3 +27,15 @@
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
 }
+
+$default: #243f4d;
+$accent: #a3bbc8;
+$title: #191919;
+$accent-filter: #191919;
+
+%btn {
+  color: #fff;
+  background-color: $accent;
+  outline-color: #8195a0;
+  cursor: pointer;
+}
