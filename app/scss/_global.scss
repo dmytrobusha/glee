@@ -4,9 +4,13 @@ body {
 }
 
 body {
-  background-color: #fff;
   display: flex;
   flex-direction: column;
+  @extend %rubik-400;
+  color: $default;
+  font-size: 16px;
+  line-height: 1.8;
+  background-color: #fff;
 }
 
 .main {
@@ -23,8 +27,10 @@ a {
   padding: 0 15px;
 }
 
-.container-small {
+.container--small {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
